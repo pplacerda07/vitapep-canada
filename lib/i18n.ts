@@ -9,7 +9,7 @@ export const t = {
     heroTitle1: 'Research peptides with',
     heroTitle2: 'clear provenance',
     heroDesc:
-      'A Canadian laboratory working with selected raw materials, in-house preparation and batch identification on every vial.',
+      'Selected raw materials, in-house preparation and batch identification on every vial.',
     heroBtn: 'View catalogue',
     heroStatLab: 'Laboratory',
     heroStatOrigin: 'Raw materials',
@@ -19,7 +19,7 @@ export const t = {
     heroStatOpVal: '99%+',
 
     // Trust bar
-    trustFocus: 'Canadian laboratory',
+    trustFocus: '99%+ purity',
     trustUnit: 'Raw materials sourced in China',
     trustLab: 'In-house preparation',
     trustFill: 'Filling in a controlled environment',
@@ -35,7 +35,7 @@ export const t = {
       'We work with suppliers that provide input traceability and purity reports for every batch.',
     purityPillar2Title: 'Specialized preparation',
     purityPillar2Desc:
-      'Every product is prepared in our Canadian laboratory, in a controlled environment that follows good practice standards.',
+      'Every product is prepared in our own laboratory, in a controlled environment that follows good practice standards.',
     purityPillar3Title: 'Batch identification',
     purityPillar3Desc:
       'Every vial carries its batch number, concentration and preparation date, leaving no room for ambiguity.',
@@ -44,10 +44,10 @@ export const t = {
     whyTag: 'Why us',
     whyTitle: 'Why VitaPep?',
     whyDesc:
-      'We built a Canadian laboratory that pairs technical rigour with consultative service. Every detail is designed for people who take research seriously.',
+      'We built a laboratory that pairs technical rigour with consultative service. Every detail is designed for people who take research seriously.',
     whyCard1Title: 'Laboratory in Canada',
     whyCard1Desc:
-      'All preparation and final filling take place in our laboratory in Canada, with controlled infrastructure and good practice standards.',
+      'All preparation and final filling take place in our own laboratory, with controlled infrastructure and good practice standards.',
     whyCard2Title: 'Raw materials from China',
     whyCard2Desc:
       'We source from selected suppliers in China that provide purity reports and input traceability for every batch we produce.',
@@ -68,7 +68,7 @@ export const t = {
     catalogTag: 'VitaPep line',
     catalogTitle: 'Peptide catalogue',
     catalogDesc:
-      'A focused line of high-purity research peptides, prepared in our laboratory in Canada.',
+      'A focused line of high-purity research peptides, prepared in our own laboratory.',
     catalogAll: 'All',
     catalogView: 'View product',
 
@@ -76,7 +76,7 @@ export const t = {
     modalPurity: 'Purity',
     modalVol: 'Volume',
     modalDosage: 'Dosage',
-    modalPrep: 'Prepared and filled in Canada',
+    modalPrep: 'Prepared and filled in our laboratory',
     modalDisclaimer:
       'For research use only. Not intended for human consumption, diagnosis or treatment.',
 
@@ -84,7 +84,7 @@ export const t = {
     facilitiesTag: 'Facilities',
     facilitiesTitle: 'From raw material to vial, under controlled conditions',
     facilitiesDesc:
-      'Raw materials arrive from China and every step that follows happens in our laboratory in Canada.',
+      'Raw materials arrive from China and every step that follows happens in our own laboratory.',
     facilitiesSince: 'Since',
     facilitiesStep1Title: 'Raw material sourcing',
     facilitiesStep1Desc:
@@ -92,7 +92,7 @@ export const t = {
     facilitiesStep4Title: 'Preparation and filling',
     facilitiesStep4Desc:
       'Preparation, purity analysis and filling in a controlled environment, with batch, concentration and date applied to every vial.',
-    facilitiesStrip: 'Prepared and filled in Canada, with',
+    facilitiesStrip: 'Every vial leaves our laboratory with',
 
     // Peptide science
     scienceTag: 'Science',
@@ -123,7 +123,7 @@ export const t = {
       },
       {
         q: 'Where do you ship?',
-        a: 'We serve research clients across Canada. Availability and shipping for other destinations are confirmed directly with our team.',
+        a: 'Shipping options and availability for your location are confirmed directly with our team.',
       },
       {
         q: 'Are the products for human consumption?',
@@ -135,7 +135,7 @@ export const t = {
       },
       {
         q: 'What does VitaPep do?',
-        a: 'VitaPep is a Canadian laboratory. We source raw materials in China and handle preparation, quality control, filling and batch identification in Canada.',
+        a: 'VitaPep is a research peptide laboratory. We source raw materials in China and handle preparation, quality control, filling and batch identification in-house.',
       },
     ],
 
@@ -145,7 +145,7 @@ export const t = {
       'Get in touch with our team and find out which peptides are available for your research protocol.',
 
     // Footer
-    footerTagline: 'High-purity research peptides, prepared in Canada.',
+    footerTagline: 'High-purity research peptides with batch identification.',
     footerLinks: 'Links',
     footerContact: 'Contact',
     footerRights: 'All rights reserved.',

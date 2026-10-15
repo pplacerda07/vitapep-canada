@@ -1,6 +1,6 @@
 'use client'
 
-import { MapPin, ArrowUpRight } from 'lucide-react'
+import { MapPin, ArrowUpRight, ShieldCheck } from 'lucide-react'
 import { Reveal } from '@/components/reveal'
 import { PARTNERS } from '@/lib/site'
 import { useLang } from '@/lib/lang-provider'
@@ -27,7 +27,7 @@ export function Facilities() {
       role: tr.facilitiesStep4Title,
       text: tr.facilitiesStep4Desc,
       image: '/factory/operator-mixing.jpg',
-      imageAlt: 'Preparation area at the VitaPep laboratory in Canada',
+      imageAlt: 'Preparation area at the VitaPep laboratory',
     },
   ]
 
@@ -85,7 +85,7 @@ export function Facilities() {
 
         <Reveal delay={0.2}>
           <div className="mx-auto mt-8 flex max-w-md items-center justify-center gap-3 rounded-3xl border border-border/70 bg-secondary/40 px-6 py-4 text-sm">
-            <span className="text-lg leading-none">🇨🇦</span>
+            <ShieldCheck className="h-5 w-5 shrink-0 text-gold" />
             <p className="text-muted-foreground">
               {tr.facilitiesStrip}{' '}
               <span className="font-semibold text-foreground">{tr.trustBatch.toLowerCase()}</span>.

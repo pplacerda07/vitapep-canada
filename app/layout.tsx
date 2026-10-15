@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   title: 'VitaPep Pharma | Canadian Research Peptides, 99%+ Purity',
   description:
-    'VitaPep Pharma is a Canadian laboratory producing high-purity research peptides. Raw materials sourced in China, preparation, filling and batch identification in Canada.',
+    'VitaPep Pharma is a Canadian laboratory producing high-purity research peptides, with raw materials sourced in China and batch identification on every vial.',
   keywords: [
     'research peptides',
     'VitaPep Pharma',
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'VitaPep Pharma | Canadian Research Peptides',
     description:
-      'High-purity research peptides prepared in our laboratory in Canada. 99%+ purity and batch identification on every vial.',
+      'High-purity research peptides prepared in our own laboratory. 99%+ purity and batch identification on every vial.',
     type: 'website',
     locale: 'en_CA',
   },

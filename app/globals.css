@@ -1,0 +1,194 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-gold: var(--gold);
+  --color-gold-soft: var(--gold-soft);
+  --color-gold-deep: var(--gold-deep);
+  --color-ink: var(--ink);
+  --color-cream: var(--cream);
+
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, Georgia, serif;
+
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.7);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.9);
+  --radius-3xl: calc(var(--radius) * 2.6);
+  --radius-4xl: calc(var(--radius) * 3.4);
+
+  --animate-shimmer: shimmer 3s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-float-slow: float 9s ease-in-out infinite;
+}
+
+:root {
+  color-scheme: light;
+  --background: #f6f1e7;
+  --foreground: #1b2129;
+  --card: #ffffff;
+  --card-foreground: #1b2129;
+  --popover: #ffffff;
+  --popover-foreground: #1b2129;
+  --primary: #b9852a;
+  --primary-foreground: #fffdf8;
+  --secondary: #ece3d2;
+  --secondary-foreground: #2a2419;
+  --muted: #efe8da;
+  --muted-foreground: #736c5b;
+  --accent: #f0e6d1;
+  --accent-foreground: #2a2419;
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e4d9c4;
+  --input: #e4d9c4;
+  --ring: #c8922e;
+
+  --gold: #c8922e;
+  --gold-soft: #e7c877;
+  --gold-deep: #8f6417;
+  --ink: #1b2129;
+  --cream: #f6f1e7;
+
+  --radius: 1.25rem;
+}
+
+/* Brand is intentionally a light, premium cream palette in both schemes. */
+.dark {
+  color-scheme: light;
+  --background: #f6f1e7;
+  --foreground: #1b2129;
+  --card: #ffffff;
+  --card-foreground: #1b2129;
+  --popover: #ffffff;
+  --popover-foreground: #1b2129;
+  --primary: #b9852a;
+  --primary-foreground: #fffdf8;
+  --secondary: #ece3d2;
+  --secondary-foreground: #2a2419;
+  --muted: #efe8da;
+  --muted-foreground: #736c5b;
+  --accent: #f0e6d1;
+  --accent-foreground: #2a2419;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: #e4d9c4;
+  --input: #e4d9c4;
+  --ring: #c8922e;
+
+  --gold: #c8922e;
+  --gold-soft: #e7c877;
+  --gold-deep: #8f6417;
+  --ink: #1b2129;
+  --cream: #f6f1e7;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    background: linear-gradient(100deg, #8f6417 0%, #c8922e 38%, #e7c877 62%, #c8922e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+
+  .bg-gold-gradient {
+    background: linear-gradient(120deg, #b9852a 0%, #c8922e 45%, #e7c877 100%);
+  }
+
+  .border-gold-gradient {
+    border-image: linear-gradient(120deg, #e7c877, #c8922e, #8f6417) 1;
+  }
+
+  .gold-hairline {
+    background: linear-gradient(90deg, transparent, #c8922e 20%, #e7c877 50%, #c8922e 80%, transparent);
+  }
+
+  /* Frosted premium glass */
+  .glass {
+    background: color-mix(in srgb, var(--cream) 72%, transparent);
+    backdrop-filter: blur(18px) saturate(140%);
+    -webkit-backdrop-filter: blur(18px) saturate(140%);
+  }
+
+  .shadow-luxe {
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.6) inset,
+      0 24px 60px -28px rgba(27, 33, 41, 0.35),
+      0 8px 24px -18px rgba(143, 100, 23, 0.4);
+  }
+
+  .shadow-luxe-lg {
+    box-shadow:
+      0 1px 0 0 rgba(255, 255, 255, 0.7) inset,
+      0 44px 90px -30px rgba(27, 33, 41, 0.45),
+      0 12px 40px -20px rgba(143, 100, 23, 0.5);
+  }
+
+  .text-shimmer {
+    background: linear-gradient(90deg, #8f6417, #c8922e 25%, #f2dfa5 50%, #c8922e 75%, #8f6417);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: shimmer 4s linear infinite;
+  }
+
+  .grain {
+    background-image: radial-gradient(rgba(27, 33, 41, 0.04) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
